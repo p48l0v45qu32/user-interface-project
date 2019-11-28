@@ -1,0 +1,26 @@
+<div class = "selection-container">
+<div class = "informations_bar">
+        Choisissez l'application et les options et envoyez le pdf vers...
+    </div>
+
+    <div class = "select-container">
+        <mat-form-field>
+            <mat-label>State</mat-label>
+            <mat-select>
+                <mat-option>None</mat-option>
+                <mat-option *ngFor="let state of apps" [value]="state">{{
+          state
+        }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field *ngFor      = "let topping of tableau">
+        <mat-select     placeholder = "Toppings" [formControl]       = "toppings">
+        <mat-option     *ngFor      = "let topping of roles" [value] = "topping">{{ topping}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <button mat-raised-button class = "button_validate">Validate</button>
+    <i      class                   = "fas fa-file-pdf slt"></i>
+    <button mat-raised-button class = "button_download">Download</button>
+</div>
