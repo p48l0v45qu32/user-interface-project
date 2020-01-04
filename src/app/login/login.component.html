@@ -1,18 +1,28 @@
+<!-- <div class="field">
+    <label for="username">Username</label>
+    <input type="text" name="username" value="" id="username" autocomplete="off" ngModel>
+</div>
+<div class="field"> -->
+<!-- <label for="password">Password</label>
+        <input type="password" name="password" value="" id="password" ngModel>
+    </div>
+    <button type="submit" name="button">Log in</button> -->
 <form #loginForm='ngForm' (ngSubmit)="onSubmit(loginForm)" id='loginForm'>
     <img src="" alt="">
     <div *ngIf="error" class="alert alert-danger">{{error}}</div>
     <div *ngIf="success" class="alert alert-success">{{success}}</div>
-    <div class="field">
-        <label for="username">Username</label>
-        <input type="text" name="username" value="" id="username" autocomplete="off" ngModel>
-    </div>
-    <div class="field">
-        <label for="password">Password</label>
-        <input type="password" name="password" value="" id="password" ngModel>
-    </div>
-    <button type="submit" name="button">Log in</button>
 </form>
-<!-- <button type="submit" name="button">Log of</button>
-</form> -->
-<!-- <button type="submit" name="button">Log of</button>
-</form> -->
+<mat-card class="login-card">
+    <mat-card-title>Login</mat-card-title>
+    <mat-form-field class="username">
+        <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+    </mat-form-field>
+    <mat-form-field class="password">
+        <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+    </mat-form-field>
+    <mat-card-actions>
+        <button mat-raised-button (click)="login()" color="primary">Login</button>
+    </mat-card-actions>
+    <!--     <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    -->
+</mat-card>
