@@ -1,0 +1,54 @@
+    <marquee behavior="alternate" scrollamount="7">
+        Welcome to dixie altran votre espace de gestion centralise des demandes
+    </marquee>
+    <mat-card class="informations_bar">
+        Choisissez l'application et les options et envoyez le pdf vers...
+    </mat-card>
+    <div class="select-container">
+        <div *ngFor="let ligne of lignes ; let indexLigne=index">
+            <p>Applications</p>
+            <select
+                class="lines"
+                ngModel
+                name="selectApps{{indexLigne}}"
+                (change)="salut(indexLigne)"
+                id="salut{{indexLigne}}"
+            >
+                <option>Aplication</option>
+                <option *ngFor="let app of apps; " [value]="app">{{app}}</option>
+            </select>
+            <span>
+                <select
+                    class="select-role"
+                    *ngFor="let choice of ligne ; let indexSelect=index"
+                    (change)="salut2(indexLigne, indexSelect)"
+                    id="col{{indexLigne}}{{indexSelect}}"
+                >
+                    <option>Role</option>
+                    <option *ngFor="let data of choice">{{data}}</option>
+                </select>
+                <div class="btn-container">
+                    <a (click)="bonjour2(indexLigne)" class="btn btn-info-index-ligne">Add Role</a>
+                </div>
+            </span>
+        </div>
+        <div class="btn-container">
+            <a (click)="bonjour()" class="btn add-ligne">Add Aplication</a>
+        </div>
+    </div>
+    <!-- <div class="button_validate">
+        <button >Valider votre selection</button>
+    </div >-->
+    <form class="download-form" #pdfForm="ngForm" (submit)="download()">
+        <!--        <div class="pdf-icon"><i class="fa" style="font-size:70px" color=red>&#xf1c1;</i></div>
+     -->
+        <div>
+            <button class="pdf">Telecharger le PDF</button>
+        </div>
+    </form>
+    <!-- <div>
+           <select (change)= 'salut()'>
+            <option>None</option>
+            <option *ngFor="let app of apps" [value]="app">{{app}}</option>
+        </select>
+    </div> -->

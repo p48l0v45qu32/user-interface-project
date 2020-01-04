@@ -1,26 +1,49 @@
-<div class = "selection-container">
-<div class = "informations_bar">
-        Choisissez l'application et les options et envoyez le pdf vers...
-    </div>
-
-    <div class = "select-container">
-        <mat-form-field>
-            <mat-label>State</mat-label>
-            <mat-select>
-                <mat-option>None</mat-option>
-                <mat-option *ngFor="let state of apps" [value]="state">{{
-          state
-        }}</mat-option>
-            </mat-select>
-        </mat-form-field>
-
-        <mat-form-field *ngFor      = "let topping of tableau">
-        <mat-select     placeholder = "Toppings" [formControl]       = "toppings">
-        <mat-option     *ngFor      = "let topping of roles" [value] = "topping">{{ topping}}</mat-option>
-            </mat-select>
-        </mat-form-field>
-    </div>
-    <button mat-raised-button class = "button_validate">Validate</button>
-    <i      class                   = "fas fa-file-pdf slt"></i>
-    <button mat-raised-button class = "button_download">Download</button>
+<!-- <div class="informations_bar">
+    Choisissez l'application et les options et envoyez le pdf vers...
 </div>
+ -->
+
+    <!-- <div class="select-container"> -->
+        <!-- <div class="select-container">
+            <select id="selectApp">
+                <option>None</option>
+                <option *ngFor="let state of apps" [value]="state">
+                    {{state}}
+                </option>
+            </select>
+
+            <span *ngFor="let topping of tableau">
+                <select placeholder="Toppings" [formControl]="toppings">
+                    <option>None</option>
+                    <option *ngFor="let topping of App1" [value]="topping">{{ topping}}</option>
+                </select>
+            </span>
+        </div> -->
+
+      <!--   <button mat-raised-button class="button_validate">Validate</button>
+        <i class="fas fa-file-pdf slt"></i>
+        <button mat-raised-button class="button_download">Download</button>
+    </div> -->
+
+
+<!-- <p>{{selectedApp}}</p>
+
+<mat-form-field>
+    <mat-label>Apps</mat-label>
+    <mat-select [(value)]="selectedApp">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let state of apps" [value]="state">{{ state }}</mat-option>
+    </mat-select>
+</mat-form-field>
+
+<mat-form-field *ngFor="let topping of tableau">
+    <mat-select placeholder="Toppings" [formControl]="toppings">
+        <mat-option *ngFor="let topping of App1" [value]="topping">{{ topping}}</mat-option>
+    </mat-select>
+</mat-form-field> -->
+
+<!-- <div *ngFor="let i of tabbb">
+
+</div>
+
+<button (clic)="salut()">salut</button> -->

@@ -1,0 +1,155 @@
+/* .style {
+  width          : 80%;
+  display        : flex;
+  justify-content: space-around;
+  flex-wrap      : wrap;
+} */
+/* .page-container{
+
+  width: 100%;
+  height: 100%;
+} */
+
+
+
+.lines,
+.add-select,
+.select-role {
+  width           : 200px;
+  height          : 30px;
+  background-color: #eeeeee;
+  border-radius   : 40px;
+  
+  &:hover {
+    background-color: lighten($color: #eeeeee, $amount: 5);
+    cursor          : pointer;
+  }
+
+  &:focus{outline: 0;}
+}
+button:focus {outline:0;}
+
+/* .select-container {
+  width          : 80%;
+  display        : flex;
+  justify-content: space-around;
+  flex-wrap      : wrap;
+  height         : auto; */
+//align-items    : left;
+//flex-direction : column;
+//overflow       : auto;
+/* } */
+.btn-container {
+  margin: 10px;
+  width           : 160px;
+  text-align      : center;
+  background-color: #eeeeee;
+  border-radius   : 40px;
+  border          : 1px solid rgb(182, 181, 181);
+
+  &:hover {
+    background-color: lighten($color: #eeeeee, $amount: 5);
+    cursor          : pointer;
+  }
+}
+
+.informations_bar {
+  margin: auto;
+  margin-top: 10px;
+  width           : 70%;
+ /*  height          : 20px;
+  font-size       : 15px;
+  font-weight     : 400;  */
+  //line-height     : 40px;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex-direction : column;
+  text-align      : center;
+  //border-radius   : 10px;
+  background-color: #eeeeee;
+}
+/* .welcome_bar{
+
+  text-align: center;
+  color: red;
+} */
+.select-container {
+  width         : 80%;
+  //display       : flex;
+  flex-direction: column;
+  padding       : 30px;
+}
+
+/*  .button_validate {
+      width: 30%;
+    } */
+/*  .button_download {
+      width: 20%;
+    }*/
+/* .button_download {
+  color           : rgb(48, 43, 43);
+  background-color: #dfe4ea;
+  text-align      : center;
+  border-radius   : 40px;
+  &               :hover{
+    background-color: lighten($color: #eeeeee, $amount: 5);
+    cursor          : pointer;
+  }
+}
+.add-ligne{
+} */
+.download-form {
+  
+  /* .pdf-icon {
+  margin: 10px;
+  } */
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex-direction : column;
+
+  .pdf {
+    width        : 125%;
+    height       : 30px;
+    margin       : 10px;
+    border-radius: 40px;
+    
+    &:hover {
+      background-color: lighten($color: #eeeeee, $amount: 5);
+      cursor          : pointer;
+    }
+    button:focus {outline:0;}
+  }
+
+}
+
+//.button_validate {
+  //display        : flex;
+  //justify-content: center;
+  //align-items    : center;
+  //flex-direction : column;
+  /* height       : 30px;
+  margin-left  : 42%;
+  margin-right : 40%;
+  border-radius: 40px;
+  margin-top   : 100px;   */
+
+ /*  &:hover {
+    background-color: lighten($color: #eeeeee, $amount: 5);
+    cursor          : pointer;
+  } */
+//}
+
+/* 
+  .slt {
+    width : 100px;
+    height: auto;
+    color : #c0392b;
+  }
+/* 
+  @media screen and (max-width: 800px) {
+      .informations_bar {
+      background-color: white;
+    } 
+*/

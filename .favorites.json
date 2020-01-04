@@ -1,0 +1,29 @@
+[
+    {
+        "type": "File",
+        "name": "c:\\Users\\pivasquezrios\\Projet_Dixie\\user-interface-project\\src\\app\\test.service.ts",
+        "parent_id": null,
+        "fsPath": "c:\\Users\\pivasquezrios\\Projet_Dixie\\user-interface-project\\src\\app\\test.service.ts",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "wnONBXmFv2k5zL8S"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\pivasquezrios\\Projet_Dixie\\user-interface-project\\src\\app\\components\\selection\\selection.component.html",
+        "parent_id": null,
+        "fsPath": "c:\\Users\\pivasquezrios\\Projet_Dixie\\user-interface-project\\src\\app\\components\\selection\\selection.component.html",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "vJA3PeynzBixpuED"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\pivasquezrios\\Projet_Dixie\\user-interface-project\\src\\app\\components\\selection\\selection.component.ts",
+        "parent_id": null,
+        "fsPath": "c:\\Users\\pivasquezrios\\Projet_Dixie\\user-interface-project\\src\\app\\components\\selection\\selection.component.ts",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "q6Jzk3fPFgK2GwAC"
+    }
+]

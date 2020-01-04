@@ -1,34 +1,21 @@
-.header-toolbar {
+
+
+.header-toolbar{
+  height: 6%;
   display: flex;
   justify-content: space-between;
+  background-color: #007EAF;
+  //background-image: url('/src/assets/logo_altran_header.png');
 
-  .app-name {
-    color: yellow;
-    font-size: 20px;
+  .app-name{
+    color:whitesmoke;
+    font-size: 30px;
     text-decoration: none;
+    font-family:  monospace;
+    //font-style: italic;
   }
 
-  /*.header-items{
-    margin:0 0 0 20px;
-    padding:0;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    .header-item{
-      margin: 10px;
-
-      
-      a{
-        color: white;
-        text-decoration: none;
-        &:hover{
-          color: darken(white, 10%);
-                  }
-      }
-    }
-  }*/
-
-  .recherche_profil,
+  .profile,
   .menu_brand {
     display: flex;
     justify-content: space-around;
@@ -37,26 +24,39 @@
 
   .profile {
     margin-right: 45px;
-    width: 20%;
-
+    width: 30%;
+    .fullname{
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+    }
     .profile_icon {
       font-size: 40px;
     }
   }
-}
 
+  .logo{
+    width: 170px;
+   
+    
+  }
+}
+.mat-sidenav-container{
+  min-height: 88%;
+}
 .mat-sidenav{
-  width:150px;
+  width:150px;  
 }
 
 .example-container {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
+ display: flex;
+ flex-direction: column;
+  height: 100%;
+  //position: absolute;
+ /*  top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
 }
 
 .example-is-mobile .example-toolbar {
@@ -72,18 +72,11 @@ h1.example-app-name {
 .example-sidenav-container {
   /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
      causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
-
   flex: 1;
-  
-  
-  
 }
 
 .example-is-mobile .example-sidenav-container {
   /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
      `<body>` to be our scrolling element for mobile layouts. */
-
   flex: 1 0 auto;
-
-  
 }

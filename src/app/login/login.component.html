@@ -1,0 +1,14 @@
+<form #loginForm='ngForm' (ngSubmit)="onSubmit(loginForm)" id='loginForm'>
+    <img src="" alt="">
+    <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+    <div *ngIf="success" class="alert alert-success">{{success}}</div>
+    <div class="field">
+      <label for="username">Username</label>
+      <input type="text" name="username" value="" id="username" autocomplete="off" ngModel>
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" name="password" value="" id="password" ngModel>
+    </div>
+    <button type="submit" name="button">Log in</button>
+  </form>
