@@ -12,7 +12,7 @@
     <div *ngIf="error" class="alert alert-danger">{{error}}</div>
     <div *ngIf="success" class="alert alert-success">{{success}}</div>
 </form>
-<mat-card class="login-card">
+<mat-card class="login-card" style="text-align: center;">
     <mat-card-title>Login</mat-card-title>
     <mat-form-field class="username">
         <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
